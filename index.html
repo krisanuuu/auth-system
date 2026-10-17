@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Authentication System</title>
+    
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>User Authentication System</h1>
+
+    <section>
+        <h2>Register</h2>
+        <form id="registerForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <br><br>
+            <input type="email" id="registerEmail" placeholder="Email" required>
+            <br><br>
+            <input type="password" id="registerPassword" placeholder="Password (min 8 characters)" minlength="8" required>
+            <br><br>
+            <button type="submit">Register</button>
+        </form>
+        <p id="registerMessage"></p>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <br><br>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <br><br>
+            <button type="submit">Login</button>
+        </form>
+        <p id="loginMessage"></p>
+    </section>
+
+    <hr>
+
+    <section id="profileSection" hidden>
+        <h2>Your Profile</h2>
+        <p id="profileInfo"></p>
+        <button id="logoutButton">Logout</button>
+    </section>
+    
+<script src="script.js"></script>
+
+</body>
+</html>
